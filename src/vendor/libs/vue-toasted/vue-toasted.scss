@@ -1,0 +1,87 @@
+[dir=rtl] .toasted-container .toasted {
+  .material-icons {
+    margin-right: -.4rem;
+    margin-left: .5rem;
+
+    &.after {
+      margin-right: .5rem;
+      margin-left: -.4rem;
+    }
+  }
+
+  .action {
+    margin-right: 7px;
+    margin-left: -7px;
+
+    &.icon .material-icons {
+      margin-right: 4px;
+      margin-left: 0;
+    }
+  }
+}
+
+.default-style {
+  @import "~@/vendor/styles/_appwork/include";
+
+  .toasted-container {
+    z-index: $zindex-notification;
+  }
+
+  .toasted-container .toasted .action {
+    font-weight: $font-weight-semibold;
+    font-size: .9em;
+  }
+
+  .toasted.primary,
+  .toasted.bubble,
+  .toasted.outline {
+    box-shadow: $floating-component-shadow;
+    font-size: $font-size-base;
+  }
+
+  .toasted.primary,
+  .toasted.bubble {
+    font-weight: normal;
+  }
+
+  .toasted.primary {
+    border-radius: $border-radius;
+  }
+
+  .toasted.outline {
+    font-weight: $font-weight-semibold;
+  }
+}
+
+.material-style {
+  @import "~@/vendor/styles/_appwork/include-material";
+
+  .toasted-container {
+    z-index: $zindex-notification;
+  }
+
+  .toasted-container .toasted .action {
+    font-weight: $font-weight-semibold;
+    font-size: .9em;
+  }
+
+  .toasted.primary,
+  .toasted.bubble,
+  .toasted.outline {
+    box-shadow: $floating-component-shadow;
+    font-size: $font-size-base;
+  }
+
+  .toasted.primary,
+  .toasted.bubble {
+    font-weight: normal;
+  }
+
+  .toasted.primary {
+    border-radius: $border-radius;
+  }
+
+  .toasted.outline {
+    font-weight: $font-weight-semibold;
+  }
+}
